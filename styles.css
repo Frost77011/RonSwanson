@@ -1,0 +1,15 @@
+footer{
+    margin-top: 200px;
+}
+
+p {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+#randomQuotes, #searchQuotes {
+    text-align: center;
+}
