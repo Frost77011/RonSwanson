@@ -6,8 +6,35 @@ p {
     text-align: center;
 }
 
-h2 {
+h1, h2 {
     text-align: center;
+}
+
+.bodyClass{
+    background-color: rgb(241, 241, 241);
+}
+
+.quoteContainer{
+    margin-top: 20px;
+    background-color: white;
+}
+
+.randomCol {
+    border: 3px solid black;
+    padding-bottom: 20px;
+}
+
+.searchCol{
+    border-top: 3px solid black;
+    border-right:3px solid black;
+    border-bottom: 3px solid black;
+    padding-bottom: 20px;
+}
+
+.RonPicture {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #randomQuotes, #searchQuotes {

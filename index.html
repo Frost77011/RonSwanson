@@ -7,7 +7,7 @@
   <title>Ron Swanson Quotes</title>
 </head>
 
-<body>
+<body class="bodyClass">
   <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #2450ca;">
     <a class="navbar-brand" href="index.html">FrostedBacon</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,24 +26,31 @@
     </div>
   </nav>
 
+    <h1>Ron Swanson Quotes</h1>
+    <img src="Ron.jpg" alt="Ron Swanson" class="RonPicture">
 
-<form>
-    <p><label><h2>Get a Random Ron Swanson Quote</h2></label>
-    <p>Select Number of Quotes:</p>
-    <p>
-    <select id="selector">
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5</option>
-    </select> </p>
-    <p><input id="randomButton" type="submit" value="Random"></input></p></p>
-</form>
 
-<div id="randomQuotes">Getting Quote...</div>
+  <div class = "container quoteContainer">
+    <div class = "row">
+      <div class="col randomCol">
+    <form>
+        <p>
+          <label><h2>Get a Random Ron Swanson Quote</h2></label>
+          <p>Select Number of Quotes:</p>
+          <p>
+        <select id="selector">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select> 
+        <input id="randomButton" type="submit" value="Random"></input></p></p>
+    </form>
 
-<hr>
+    <div id="randomQuotes">Getting Quote...</div>
+  </div>
+  <div class="col searchCol">
 
     <p>
         <label><h2>Search a Ron Swanson Quote</h2></label>
@@ -55,7 +62,8 @@
     </p>
 
     <div id="searchQuotes">Getting Quote...</div>
-
+  </div>
+  </div></div>
 
 
 

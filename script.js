@@ -10,7 +10,7 @@ document.getElementById("randomButton").addEventListener("click", function(event
     }).then(function(json) {
         let results = "";
         for (let i = 0; i< number; i++) {
-            results += "<p>" + json[i] + "</p>";
+            results += "<p>\"" + json[i] + "\"</p>";
         }
         document.getElementById("randomQuotes").innerHTML = results;
     });
@@ -28,7 +28,10 @@ document.getElementById("searchSubmit").addEventListener("click", function(event
     }).then(function(json) {
         let results = "";
         for (let i = 0; i< json.length; i++) {
-            results += "<p>" + json[i] + "</p>";
+            results += "<p>\"" + json[i] + "\"</p>";
+        }
+        if (json.length === 0) {
+            results += "No quotes under keywords: \"" + value + "\"";
         }
         document.getElementById("searchQuotes").innerHTML = results;
     });
